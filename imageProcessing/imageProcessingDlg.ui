@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>924</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>861</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>图像融合</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>351</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输入彩色图像</string>
+     </property>
+     <widget class="QToolButton" name="toolButton1_1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>250</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label1_1">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>34</y>
+        <width>301</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit1_1">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>310</y>
+       <width>351</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输入灰度图像</string>
+     </property>
+     <widget class="QToolButton" name="toolButton1_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>270</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label1_2">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>34</y>
+        <width>311</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit1_2">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>270</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton1_1">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>570</y>
+       <width>101</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>运行</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label1_img">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>160</y>
+       <width>361</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton1_2">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>570</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit1_3">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>570</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>图像镶嵌</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>351</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输入图像1</string>
+     </property>
+     <widget class="QToolButton" name="toolButton2_1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>250</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label2_1">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>34</y>
+        <width>301</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit2_1">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>250</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>310</y>
+       <width>351</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输入图像2</string>
+     </property>
+     <widget class="QToolButton" name="toolButton2_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>270</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label2_2">
+      <property name="geometry">
+       <rect>
+        <x>21</x>
+        <y>34</y>
+        <width>311</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit2_2">
+      <property name="geometry">
+       <rect>
+        <x>32</x>
+        <y>270</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label2_img">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>130</y>
+       <width>401</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton2_2">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>570</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton2_1">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>570</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>运行</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit2_3">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>570</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>边缘检测</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>371</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输入图像</string>
+     </property>
+     <widget class="QLabel" name="label3_1">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>34</y>
+        <width>321</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit3_1">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>560</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton3">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>560</y>
+        <width>47</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>20</y>
+       <width>411</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输出结果</string>
+     </property>
+     <widget class="QLabel" name="label3_2">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>64</y>
+        <width>361</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton3_1">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>550</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>运行</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton3_2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>550</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit3_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>550</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>341</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>阴影检测</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>20</y>
+       <width>411</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输出结果</string>
+     </property>
+     <widget class="QLabel" name="label4_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>321</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton4_1">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>550</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>运行</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton4_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>550</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit4_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>550</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>371</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>输入图像</string>
+     </property>
+     <widget class="QLabel" name="label4_1">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>34</y>
+        <width>321</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit4_1">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>560</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton4">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>560</y>
+        <width>47</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
